@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#topbar").click(function(){
+        $("#panel").slideToggle(1000);
+    });
+
+    
+});
+</script>
+
+<style>
+
+	#panel, #topbar {
+    padding: 5px;
+    text-align: center;
+    border: solid 1px black;
+	background-color:yellow;
+	}
+    #panel{
+        padding: 80px;
+        display: none;
+    }
+
+</style>
+
+</head>
+<body>
+
+<div id="topbar">View Panel</div>
+<div id="panel">This is a Panel with sample Content</div>
+
+</body>
+</html>

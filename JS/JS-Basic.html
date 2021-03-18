@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sample JavaScript</title>
+    </head>
+    <body>
+        <h1>JavaScript Basic</h1>
+        <p id="basic"></p>
+        <p id="array"></p>
+        <p id="concat"></p>
+        <script type="text/javascript">
+        var fruits=["Apple","Orange","Pear","Grape","Mango"];
+        var Girls=["Julie","Marry","Laura","Jill"];
+        var Boys=["Bob","Joe","Walt","Sam"];
+        var Combined= Girls.concat(Boys);
+        /*
+        //the last element removed
+        fruits.pop(); // removed Mango
+        //the first element removed 
+        fruits.shift(); // removed Apple
+        //add the new element at the end of array
+        fruits.push("Cherry");
+        //add the new element at the start of array
+        fruits.unshift("Cherry");
+        //change the first element to Apple
+        fruits[0]="Apple";
+        //delete element
+        delete fruits[4];  
+        //Splicing Array
+        fruits.splice(2,0,"Lemon","Banana");
+        //Sorting Array
+        fruits.sort();
+        //Reversed
+        fruits.reverse();
+        */ 
+        
+           //document.getElementById("basic").innerHTML=Math.random();
+           //document.getElementById("basic").innerHTML=Math.min(1,2,5,3,6,8,4);
+           //document.getElementById("basic").innerHTML=Math.max(1,2,5,3,6,8,4);
+           //document.getElementById("basic").innerHTML=Math.round(15.4);
+           //document.getElementById("basic").innerHTML=Math.floor(15.7);
+           document.getElementById("basic").innerHTML=Math.ceil(15.4);
+           
+           //document.getElementById("array").innerHTML=fruits[4];
+           //document.getElementById("array").innerHTML=fruits.toString();
+           document.getElementById("array").innerHTML=fruits.join(" * ");
+           document.getElementById("concat").innerHTML=Combined;
+
+        </script>
+    </body>
+</html>

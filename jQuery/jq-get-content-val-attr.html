@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          alert($("#name").val());
+          alert($("#ya").attr("href"));
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <p>Name: <input type="text" id="name" value="John Smith"></p>
+    <p><a href="http://google.com" id="ya">google.com</a></p>
+    <button>Get Value</button><br /><br />
+    <br />
+  </body>
+</html>

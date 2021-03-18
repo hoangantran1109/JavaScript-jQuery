@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        //this | :button: Button hide
+        //*: all hide
+        $(":button").hide();
+    });
+});
+</script>
+
+
+
+</head>
+<body>
+
+<h2 class="head">This is a heading</h2>
+
+<p>This is a line of text</p>
+<p>This is another line of text</p>
+
+<button>Hidden</button>
+</body>
+</html>

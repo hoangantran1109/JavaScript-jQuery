@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sample JavaScript</title>
+    </head>
+    <body>
+        <h1>JavaScript Basic</h1>
+        <p id="demo"></p>
+        <script type="text/javascript">
+            /*
+            var count;
+            for(count=0 ;count<= 10 ;count++){
+                document.write( count + "<br />");
+            }
+            */
+           //For in Loop
+           var txt="";
+           var person ={fname:"John",lname:"Smith",age:30};
+           var x;
+           for (x in person){
+               txt+=person[x]+" ";
+           }
+           document.getElementById("demo").innerHTML=txt;
+        </script>
+    </body>
+</html>

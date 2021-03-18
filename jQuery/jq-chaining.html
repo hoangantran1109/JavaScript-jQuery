@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          $("#square").css("background", "red").slideToggle(2000);
+        });
+      });
+    </script>
+
+    <style>
+      #square {
+        background: blue;
+        height: 200px;
+        width: 200px;
+        margin-top: 5px;
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <button>Animate</button><br /><br />
+    <div id="square"></div>
+    <br />
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#button1").click(function () {
+          $("#text1").text("Next Text Line");
+        });
+        $("#button2").click(function () {
+          $("#text2").html("<b>Bold Text Line</b>");
+        });
+        $("#button3").click(function () {
+          $("#name").val("Jane Wills");
+        });
+        $("#button4").click(function () {
+          $("#ya").attr("href","http://gmail.com");
+        });
+      });
+    </script>
+  </head>
+  <body>
+
+    <p id="text1">Text Line 1</p>
+    <p id="text2">Text Line 2</p>
+
+    <p>Name: <input type="text" id="name" value="John Smith"></p>
+    <p><a href="http://google.com" id="ya">google.com</a></p>
+    <button id="button1">Reset Text</button>
+    <button id="button2">Reset HTML</button>
+    <button id="button3">Reset Value</button>
+    <button id="button4">Change Link URL</button>
+    <br />
+  </body>
+</html>
